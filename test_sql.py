@@ -95,4 +95,5 @@ def test_run_delete(db):
     items = run_query(db, "select name from subjects")  
     assert set(x[0] for x in items) == set(["C","UNIX","Technology","Science Fiction","Productivity","Psychology","Politics","Go"]), "Subjects mismatch"
 
+
     
